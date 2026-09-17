@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# 사용법: ./main.sh [download|serve] [model_name]
-# 예: ./main.sh serve glm-5.3
+# 사용법: ./main.sh [download|install|serve] [model_name]
+# 예: ./main.sh serve glm-5.3-flash
 
 ACTION=$1
 MODEL=$2
 
 if [[ -z "$ACTION" || -z "$MODEL" ]]; then
-    echo "Usage: ./main.sh [download|serve] [model_name]"
-    echo "Available models: glm-5.3, qwen-3.8"
+    echo "Usage: ./main.sh [download|install|serve] [model_name]"
+    echo "Available models: glm-5.3-flash, qwen-3.8-27b-fp8"
     exit 1
 fi
 

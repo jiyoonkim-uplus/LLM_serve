@@ -2,7 +2,8 @@
 # GLM 5.3 Flash vLLM Serve Script
 
 
-vllm serve zai-org/GLM-5.3 \   # 실제 경로로 수정 필요
+# 다운로드 스크립트(download.py)의 local_dir 경로와 일치시켜야 합니다.
+vllm serve /data/public/model/GLM-5.3-Flash \
   --host 0.0.0.0 \
   --port 8000 \
   --tensor-parallel-size 8 \

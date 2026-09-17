@@ -2,8 +2,7 @@
 # Qwen 3.8 vLLM Serve Script
 
 NCCL_SHM_DISABLE=1 \
-CUDA_LAUNCH_BLOCKING=1 \
-vllm serve /data/public/model/Qwen--Qwen3.8-27B \  # 실제 경로로 수정 필요
+vllm serve /data/public/model/Qwen-3.8-27B-FP8 \
   --host 0.0.0.0 \
   --port 8001 \
   --tensor-parallel-size 4 \
